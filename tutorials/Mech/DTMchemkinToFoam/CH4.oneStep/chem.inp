@@ -1,0 +1,9 @@
+ELEMENTS
+O  H  C  N  AR
+END
+SPECIES
+CH4 H2O O2 CO2 N2 
+END
+REACTIONS
+CH4+2O2<=>CO2+2H2O                       1.200E+17   -1.000        .00
+END

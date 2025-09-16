@@ -1,0 +1,42 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      physicalProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// this is setting for preprocessing FTM
+usingDetailedTransportModel  true;   //newly added
+usingCoTHERM                 false;  //newly added
+usingPreProcessingFTM        true;   //must be true, default is false
+
+majorSpeciesForCoTHERM (H2 O2 CO2 H2O);  //newly added
+epsilonT          0.2;   // [K], newly added
+epsilonP          100;   // [Pa], newly added
+epsilonS          0.001; // [-], in mass fraction, newly added
+
+thermoType
+{
+    type            hePsiThermo;
+    mixture         DTMMulticomponentMixture;
+    transport       preprocessingFTMTransport;
+    thermo          janaf;
+    energy          sensibleEnthalpy;
+    equationOfState perfectGas;
+    specie          specie;
+}
+
+defaultSpecie N2;
+
+#include "thermo.DTM"
+
+// ************************************************************************* //

@@ -1,0 +1,29 @@
+EXE_INC = \
+    -IchemkinReader \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/sampling/lnInclude \
+    -I$(LIB_SRC)/MomentumTransportModels/momentumTransportModels/lnInclude \
+    -I$(LIB_SRC)/MomentumTransportModels/compressible/lnInclude \
+    -I$(LIB_DTL12_SRC)/ThermophysicalTransportModels/lnInclude \
+    -I$(LIB_DTL12_SRC)/ThermophysicalTransportModels/fluidMulticomponentThermo/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/specie/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/multicomponentThermo/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/basic/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/chemistryModel/lnInclude \
+    -I$(LIB_DTL12_SRC)/combustionModels/lnInclude
+
+EXE_LIBS = \
+    -L$(FOAM_USER_LIBBIN) \
+    -lfluidThermophysicalModels \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lsampling \
+    -lmomentumTransportModels \
+    -lcoupledThermophysicalTransportModels \
+    -lfluidMulticomponentThermophysicalTransportModels \
+    -lmulticomponentThermophysicalModels \
+    -lspecie \
+    -lfluidThermophysicalModels \
+    -lchemistryModel \
+    -lcombustionModels

@@ -1,0 +1,5 @@
+chemkinReader/chemkinReader.C
+chemkinReader/chemkinLexer.L
+DTMchemkinToFoam.C
+
+EXE = $(FOAM_USER_APPBIN)/DTMchemkinToFoam

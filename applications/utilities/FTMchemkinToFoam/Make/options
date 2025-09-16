@@ -1,0 +1,41 @@
+EXE_INC = \
+    -I$(FOAM_MODULES)/fluidSolver/lnInclude \
+    -IOrthogonalFitting \
+    -I$(FOAM_MODULES)/isothermalFluid/lnInclude \
+    -I$(LIB_SRC)/MomentumTransportModels/momentumTransportModels/lnInclude \
+    -I$(LIB_SRC)/MomentumTransportModels/compressible/lnInclude \
+    -I$(LIB_DTL12_SRC)/ThermophysicalTransportModels/thermophysicalTransportModel/lnInclude \
+    -I$(LIB_DTL12_SRC)/ThermophysicalTransportModels/fluid/lnInclude \
+    -I$(LIB_DTL12_SRC)/ThermophysicalTransportModels/fluidMulticomponentThermo/lnInclude \
+    -I$(LIB_SRC)/physicalProperties/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/specie/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/multicomponentThermo/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/basic/lnInclude \
+    -I$(LIB_DTL12_SRC)/thermophysicalModels/chemistryModel/lnInclude \
+    -I$(LIB_SRC)/ODE/lnInclude \
+    -I$(LIB_DTL12_SRC)/combustionModels/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/cfdTools \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/sampling/lnInclude
+
+EXE_LIBS = \
+    -L$(FOAM_USER_LIBBIN) \
+    -lfluidSolver \
+    -lisothermalFluid \
+    -lfluidThermophysicalModels \
+    -lspecie \
+    -lchemistryModel \
+    -lODE \
+    -lcombustionModels \
+    -lmulticomponentThermophysicalModels \
+    -lmomentumTransportModels \
+    -lcompressibleMomentumTransportModels \
+    -lcoupledThermophysicalTransportModels \
+    -lfluidMulticomponentThermophysicalTransportModels \
+    -lfiniteVolume \
+    -lfvModels \
+    -lfvConstraints \
+    -lmeshTools \
+    -lsampling
+

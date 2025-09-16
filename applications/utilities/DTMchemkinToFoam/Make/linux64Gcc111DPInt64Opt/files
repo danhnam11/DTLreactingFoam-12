@@ -1,0 +1,5 @@
+SOURCE += chemkinReader/chemkinReader.C
+SOURCE += chemkinReader/chemkinLexer.L
+SOURCE += DTMchemkinToFoam.C
+
+EXE = $(FOAM_USER_APPBIN)/DTMchemkinToFoam

@@ -1,0 +1,7 @@
+OrthogonalFitting/DPOLFT.C
+OrthogonalFitting/DPCOEF.C
+OrthogonalFitting/DP1VLU.C
+PropertyReader.C
+FTMchemkinToFoam.C
+
+EXE = $(FOAM_USER_APPBIN)/FTMchemkinToFoam

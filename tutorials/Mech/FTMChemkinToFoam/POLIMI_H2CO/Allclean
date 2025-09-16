@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd "${0%/*}" || exit 1
+
+# remove the data
+rm -rf constant/thermo.FTM
+rm -rf constant/reactions
+rm -rf log*
+rm -rf constant/TranportCoeffDict
+
+echo "Clean up completed."
+#------------------------------------------------------------------------------

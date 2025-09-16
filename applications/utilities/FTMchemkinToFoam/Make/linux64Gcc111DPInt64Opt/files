@@ -1,0 +1,7 @@
+SOURCE += OrthogonalFitting/DPOLFT.C
+SOURCE += OrthogonalFitting/DPCOEF.C
+SOURCE += OrthogonalFitting/DP1VLU.C
+SOURCE += PropertyReader.C
+SOURCE += FTMchemkinToFoam.C
+
+EXE = $(FOAM_USER_APPBIN)/FTMchemkinToFoam

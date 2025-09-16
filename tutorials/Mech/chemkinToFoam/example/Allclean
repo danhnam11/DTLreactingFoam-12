@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd "${0%/*}" || exit 1
+
+# remove the data
+rm -rf thermo.STM
+rm -rf reactions
+
+echo "Clean up completed."
+#------------------------------------------------------------------------------

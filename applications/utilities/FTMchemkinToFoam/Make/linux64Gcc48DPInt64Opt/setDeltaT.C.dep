@@ -1,0 +1,6 @@
+$(OBJECTS_DIR)/setDeltaT.C.dep: \
+setDeltaT.C \
+setDeltaT.H \
+
+setDeltaT.H :
+

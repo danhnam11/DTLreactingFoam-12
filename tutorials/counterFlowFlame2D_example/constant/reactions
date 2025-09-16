@@ -1,0 +1,14 @@
+reactions
+{
+    un-named-reaction-0
+    {
+        type            reversibleArrhenius;
+        reaction        "CH4 + 2O2 = CO2 + 2H2O";
+        A               1.2e+11;
+        beta            -1;
+        Ta              0;
+    }
+}
+Tlow            200;
+Thigh           3500;
+

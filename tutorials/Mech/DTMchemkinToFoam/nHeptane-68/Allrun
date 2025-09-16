@@ -1,0 +1,25 @@
+# ------------------------------------------------------------------
+# Allrun script for kineticChemkinToFoam tutorial
+# ------------------------------------------------------------------
+
+# Clean previous outputs first 
+./Allclean
+
+echo "Running DTMchemkinToFoam inside $(pwd)..."
+
+DTMchemkinToFoam \
+    chem.inp \
+    therm.dat \
+    trans.dat \
+    transportSutherland \
+    reactions \
+    thermo.DTM
+
+echo "DTMchemkinToFoam execution complete."
+echo " "
+echo "Converting file from CHEMKIN to OpenFOAM format finished."
+echo "Output files are: 'reactions' and 'thermo.DTM'."
+echo " "
+echo "Now, let copy these files into 'constant' directory of your case to run simulation."
+
+#------------------------------------------------------------------------------
