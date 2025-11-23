@@ -372,7 +372,24 @@ Foam::basicThermo::implementation::implementation
         ),
         mesh,
         dimensionedScalar(dimensionSet(0, 0, 0, 0, 0), 1.0)
-    )
+    ),
+    coTHERMStepCount_ 
+    (
+        IOobject
+        (
+            phasePropertyName("coTHERMStepCount"),
+            mesh.time().name(),
+            mesh,
+            IOobject::NO_READ,
+            IOobject::NO_WRITE
+        ),
+        mesh,
+        dimensionedScalar(dimensionSet(0, 0, 0, 0, 0), 0.0)
+    ),
+    maxCoTHERMStepCount_
+    (
+        thermoDict_.lookupOrDefault("maxCoTHERMStepCount", 100)
+    )       
     // Nam 
 {}
 

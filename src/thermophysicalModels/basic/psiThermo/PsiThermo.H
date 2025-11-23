@@ -57,6 +57,9 @@ class PsiThermo
         //- Store List of raw thermophysical data of all individual species - Nam      
         const PtrList<typename BaseThermo::mixtureType::thermoType>& specieThermos_;
 
+        //- coTHERM modes
+        int mode_;
+
     // Private Member Functions
         //- Calculate the thermo variables, original
         void calculate();

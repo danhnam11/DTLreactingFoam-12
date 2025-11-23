@@ -505,6 +505,14 @@ protected:
             //    0 means re calculate all properties
             volScalarField coTHERMstatus_; 
             volScalarField flagSpecies_;  // 0 mean copy, 1 mean recalculate
+
+        // to avoid coTHERM copy forever 
+            // Number of consecutive CoTHERM-based reuse steps per cell
+            volScalarField coTHERMStepCount_;
+
+            // Maximum allowed reuse count before forcing detailed recalculation
+            scalar maxCoTHERMStepCount_;
+
         // Nam - end
 
 public:
