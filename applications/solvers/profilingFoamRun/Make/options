@@ -1,0 +1,8 @@
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(HOME)/intel/oneapi/vtune/latest/sdk/include  
+
+EXE_LIBS = \
+    -lfiniteVolume \
+    -L$(HOME)/intel/oneapi/vtune/latest/sdk/lib64 \
+    -littnotify  
