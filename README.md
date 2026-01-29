@@ -75,10 +75,11 @@ Several test cases (e.g., canonical cases in combustion) are available in the _t
 
 ## Authors 
 This package was developed at the Clean Combustion & Energy Research Lab., Dept. of Mech. Engineering, Ulsan National Institute of Science and Technology (UNIST), Korea (Prof. C.S. Yoo: https://csyoo.unist.ac.kr/). If you publish results obtained by using this package, please cite our paper as follows:
-- D. N. Nguyen, J. H. Lee, C. S. Yoo, DTLreactingFoam: An efficient CFD tool for laminar reacting flow simulations using detailed chemistry and transport with time-correlated thermophysical properties, Computer Physics Communications (2025)(submitted).
+- D. N. Nguyen, J. H. Lee, C. S. Yoo, DTLreactingFoam: An efficient CFD tool for laminar reacting flow simulations using detailed chemistry and transport with time-correlated thermophysical properties, Computer Physics Communications 322 (2026) 110052 (https://doi.org/10.1016/j.cpc.2026.110052).
 
 If you need help with installation or have any questions, feel free to reach out: 
 - danhnam11@gmail.com or nam.nguyendanh@hust.edu.vn 
 
 ## Reference
 [1] R. J. Kee, F. M. Rupley, E. Meeks, J. A. Miller, CHEMKIN-III: A FORTRAN chemical kinetics package for the analysis of gas-phase chemical and plasma kinetics, SAND96-8216 (1996).
+
