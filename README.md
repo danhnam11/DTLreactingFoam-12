@@ -83,3 +83,5 @@ If you need help with installation or have any questions, feel free to reach out
 ## Reference
 [1] R. J. Kee, F. M. Rupley, E. Meeks, J. A. Miller, CHEMKIN-III: A FORTRAN chemical kinetics package for the analysis of gas-phase chemical and plasma kinetics, SAND96-8216 (1996).
 
+## Notes: 
+Should you find bugs or have suggestions on how to make the code better, please post on cfd-online using the following thread: https://www.cfd-online.com/Forums/openfoam-community-contributions/262087-dtlreactingfoam-new-solver-laminar-reacting-flow-simulations-openfoam.html 
